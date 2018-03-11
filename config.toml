@@ -1,0 +1,15 @@
+contentDir = "content"
+layoutDir = "layouts"
+publishDir = "public"
+buildDrafts = false
+baseURL = "https://example.com/"
+canonifyURLs = true
+title = "Kube on Hugo"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  subtitle = "Building Kube with Hugo"
+  author = "biogit"
