@@ -1,15 +1,33 @@
+baseURL = "/" # try to have relative paths
+canonifyURLs = false # true turns relative URLs into absolute
+languageCode = "en-us"
+title = "Kube for Hugo on Netlify"
+description = "Build and deploy a Hugo site with Kube theme on Netlify."
 contentDir = "content"
 layoutDir = "layouts"
 publishDir = "public"
-buildDrafts = false
-baseURL = "https://example.com/"
-canonifyURLs = true
-title = "Kube on Hugo"
+theme = "kube"
+buildDrafts = false # Include drafts when building.
 
 [taxonomies]
   category = "categories"
   tag = "tags"
 
 [params]
-  subtitle = "Building Kube with Hugo"
-  author = "biogit"
+  subtitle = "Building Kube with Hugo on Netlify"
+  author = "biogit" # can be a name
+  github = "biogit"
+  RSSLink = "/index.xml"
+
+[[menu.main]]
+    name = "Docs"
+    weight = -100
+    url = "/docs/"
+[[menu.main]]
+    name = "Blog"
+    weight = -100
+    url = "/blog/"
+[[menu.main]]
+    name = "Faq"
+    weight = -100
+    url = "/faq/"
